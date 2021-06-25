@@ -10,10 +10,10 @@
      wait: no
      nics:
        - net-name: int_network
-	 userdata: |
-     #!/bin/bash
-     curl -o /tmp/openstack.pub http://www.opentlc.com/download/ansible_bootcamp/openstack_keys/openstack.pub
-     cat /tmp/openstack.pub >> /home/cloud-user/.ssh/authorized_keys
+     userdata: |
+      #!/bin/bash
+      curl -o /tmp/openstack.pub http://www.opentlc.com/download/ansible_bootcamp/openstack_keys/openstack.pub
+      cat /tmp/openstack.pub >> /home/cloud-user/.ssh/authorized_keys
 
 - name: Create instances
   os_server:
@@ -65,7 +65,7 @@
      #!/bin/bash
      curl -o /tmp/openstack.pub http://www.opentlc.com/download/ansible_bootcamp/openstack_keys/openstack.pub
      cat /tmp/openstack.pub >> /home/cloud-user/.ssh/authorized_keys
-	 
+
 - name: Add floating IP to instance
   os_floating_ip:
     cloud: openstack
