@@ -1,4 +1,4 @@
-- name: Create m2.small flavor
+- name: Create m1.small flavor
   os_nova_flavor:
      cloud: ospcloud
      state: present
