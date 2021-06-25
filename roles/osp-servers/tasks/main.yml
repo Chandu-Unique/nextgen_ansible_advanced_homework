@@ -1,5 +1,5 @@
 - name: Create instances
-   os_server:
+  os_server:
     cloud: openstack
     name: app2
     image: rhel-guest
