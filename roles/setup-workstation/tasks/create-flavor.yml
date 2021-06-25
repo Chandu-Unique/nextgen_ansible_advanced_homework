@@ -1,8 +1,8 @@
-- name: Create m2.medium flavor
+- name: Create m1.medium flavor
   os_nova_flavor:
      cloud: ospcloud
      state: present
-     name: m2.medium
+     name: m1.medium
      ram: 2048
      vcpus: 1
      disk: 10
