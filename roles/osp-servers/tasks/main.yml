@@ -4,7 +4,7 @@
      name: app1
      image: rhel-guest
      key_name: ansible_ssh
-     flavor: m1.medium
+     flavor: m2.medium
      security_groups: apps
      delete_fip: yes
      wait: no
@@ -21,7 +21,7 @@
     name: app2
     image: rhel-guest
     key_name: ansible_ssh
-    flavor: m1.medium 
+    flavor: m2.medium 
     security_groups: apps
     delete_fip: yes
     wait: no
@@ -38,7 +38,7 @@
     name: db
     image: rhel-guest
     key_name: ansible_ssh
-    flavor: m1.medium 
+    flavor: m2.medium 
     security_groups: db
     delete_fip: yes
     wait: no
@@ -55,7 +55,7 @@
     name: frontend
     image: rhel-guest
     key_name: ansible_ssh
-    flavor: m1.medium 
+    flavor: m2.medium 
     security_groups: frontend
     delete_fip: yes
     wait: no
