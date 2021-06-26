@@ -3,23 +3,8 @@
   tasks:
   - name: OpenStack servers
     os_server_info:
-        cloud: openstack
-        region_name: regionOne
-    register: r_os_servers
-  - name: add host
-    add_host:
-        name: "{{ item.public_v4 }}"
-        ansible_user: cloud-user
-        ansible_ssh_private_key_file: "~/.ssh/mykey.pem"
-        group:
-          - "{{ item.metadata.group }}"
-          - "{{ item.metadata.deployment_name }}"
-    loop: "{{ r_os_servers.openstack_servers }}"
-
-  - name: Create index.html file for hosting static content
-    copy:
-      content: "Ansible has done its job"
-      dest: /var/www/html/index.html
+      cloud: openstack
+     register: result
 
   - name: Curl website
     uri:
