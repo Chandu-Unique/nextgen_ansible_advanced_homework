@@ -12,8 +12,8 @@
   yum_repository:
      name: "{{ item.name }}"
      baseurl: "{{ item.baseurl }}"
-     enabled=1
-     gpgcheck=0
+     enabled: 1
+     gpgcheck: 0
   loop:
    - { name: 'Red Hat Enterprise Linux 7', baseurl: 'http://192.168.0.5/repos/rhel-7-server-rpms' }
    - { name: 'Red Hat Enterprise Linux 7 Common', baseurl: 'http://192.168.0.5/repos/rhel-7-server-rh-common-rpms' }
