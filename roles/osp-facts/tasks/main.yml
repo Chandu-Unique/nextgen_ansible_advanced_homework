@@ -11,6 +11,6 @@
         group: 
           - "{{ result.metadata.group }}"
           - "{{ result.metadata.deployment_name }}"
-     loop: "{{ r_instances.openstack_servers }}"
+     loop: "{{ result.openstack_servers }}"
      loop_control:
         loop_var: result
