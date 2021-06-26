@@ -1,8 +1,8 @@
 - name: Fetch Instance Info
-      os_server_info:
+  os_server_info:
         cloud: "{{ openstack_cloud | default('openstack') }}"
         region_name: "{{ openstack_region | default('regionOne') }}"
-      register: r_instances
+  register: r_instances
 
 - name: Add host(s) to inventory
   add_host:
